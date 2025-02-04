@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+.slider-container {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scrollbar-width: none;
+  display: flex;
+}
+.slider-container::-webkit-scrollbar {
+  display: none;
+}
+.slide {
+  scroll-snap-align: start;
+  flex: 0 0 100%;
+}
